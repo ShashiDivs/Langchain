@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 import os
 
-load_dotenv()
+load_dotenv(override=True)
 
 
 #API_KEY_OPENAI = os.getenv("API_KEY_OPENAI")

@@ -4,12 +4,12 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
 from dotenv import load_dotenv
 import os
-load_dotenv()
+load_dotenv(override=True)
 
 API_KEY_OPENAI = os.getenv("API_KEY_OPENAI")
 
 loader = DirectoryLoader(
-    path="D:/Nitish_CampusX/Langchain/books",
+    path="Users/shashidivya/Desktop/Langchain/books",
     glob="*.pdf",
     loader_cls=PyPDFLoader
 )
