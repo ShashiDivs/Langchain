@@ -9,7 +9,7 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains import RetrievalQA
 
 # 1. Load your .env and read the correct key
-load_dotenv()
+load_dotenv(override=True)
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
 # 2. Instantiate the chat model correctly
